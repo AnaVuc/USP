@@ -423,8 +423,8 @@ demo = {
 
 
 
-    var chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-    var chart_data = [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100];
+    var chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAJ', 'JUN', 'JUL', 'AVG', 'SEP', 'OKT', 'NOV', 'DEC'];
+    var chart_data = [24, 23, 23, 22, 21, 24, 24, 22, 23, 21, 22, 23];
 
 
     var ctx = document.getElementById("chartBig1").getContext('2d');
@@ -439,7 +439,7 @@ demo = {
       data: {
         labels: chart_labels,
         datasets: [{
-          label: "My First dataset",
+          label: "Prosečna temperatura za mesec",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: '#d346b1',
