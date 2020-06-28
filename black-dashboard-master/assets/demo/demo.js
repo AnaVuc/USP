@@ -134,9 +134,9 @@ demo = {
             zeroLineColor: "transparent",
           },
           ticks: {
-            suggestedMin: 60,
-            suggestedMax: 125,
-            padding: 20,
+            suggestedMin: 10,
+            suggestedMax: 100,
+            padding: 5,
             fontColor: "#2380f7"
           }
         }],
@@ -149,7 +149,7 @@ demo = {
             zeroLineColor: "transparent",
           },
           ticks: {
-            padding: 20,
+            padding: 10,
             fontColor: "#2380f7"
           }
         }]
@@ -182,9 +182,9 @@ demo = {
             zeroLineColor: "transparent",
           },
           ticks: {
-            suggestedMin: 60,
-            suggestedMax: 125,
-            padding: 20,
+            suggestedMin: 20,
+            suggestedMax: 30,
+            padding: 1,
             fontColor: "#9a9a9a"
           }
         }],
@@ -327,9 +327,9 @@ demo = {
             zeroLineColor: "transparent",
           },
           ticks: {
-            suggestedMin: 60,
-            suggestedMax: 120,
-            padding: 20,
+            suggestedMin: 0,
+            suggestedMax: 10,
+            padding: 2,
             fontColor: "#9e9e9e"
           }
         }],
@@ -360,7 +360,7 @@ demo = {
     var data = {
       labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
       datasets: [{
-        label: "Data",
+        label: "Ušteda u hiljadama dinara",
         fill: true,
         backgroundColor: gradientStroke,
         borderColor: '#d048b6',
@@ -374,7 +374,7 @@ demo = {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
-        data: [80, 100, 70, 80, 120, 80],
+        data: [11, 13, 17, 13, 15, 14],
       }]
     };
 
@@ -466,7 +466,7 @@ demo = {
       myChartData.update();
     });
     $("#1").click(function() {
-      var chart_data = [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120];
+      var chart_data = [13, 14, 10, 9, 12, 10, 11, 8, 6, 12, 9, 11];
       var data = myChartData.config.data;
       data.datasets[0].data = chart_data;
       data.labels = chart_labels;
@@ -474,7 +474,7 @@ demo = {
     });
 
     $("#2").click(function() {
-      var chart_data = [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130];
+      var chart_data = [45, 51, 48, 57, 53, 60, 58, 53, 49, 52, 55, 57];
       var data = myChartData.config.data;
       data.datasets[0].data = chart_data;
       data.labels = chart_labels;
@@ -498,9 +498,9 @@ demo = {
         display: false
       },
       data: {
-        labels: ['USA', 'GER', 'AUS', 'UK', 'RO', 'BR'],
+        labels: ['Učionice', 'Hodnici', 'Sala za fizičko', 'Zbornica', 'Kuhinja', 'Laboratorija'],
         datasets: [{
-          label: "Countries",
+          label: "Potrošeno struje",
           fill: true,
           backgroundColor: gradientStroke,
           hoverBackgroundColor: gradientStroke,
@@ -508,7 +508,7 @@ demo = {
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          data: [53, 20, 10, 80, 100, 45],
+          data: [6, 2, 4, 2, 7, 3],
         }]
       },
       options: gradientBarChartConfiguration
